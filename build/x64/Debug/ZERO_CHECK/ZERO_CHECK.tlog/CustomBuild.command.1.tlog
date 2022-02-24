@@ -1,0 +1,10 @@
+^C:\USERS\MINSU\DESKTOP\WORK\COMPUTER-GRAPHICS\ASSIGNMENT2\RAYTRACER\BUILD\CMAKEFILES\98D6EF6FCC943AB1577EE8E796C2D019\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer -BC:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/build/Ray Tracer.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

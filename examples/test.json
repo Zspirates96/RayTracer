@@ -1,0 +1,143 @@
+{
+"nbounces":1,
+"sampling" : 1,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov":35,
+    "position": [0.0, -3.5, 2.0],
+    "lookat": [0.0, 1.0, -0.1],
+    "up": [0.0, 0.0, 0.5]
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlightgg",
+        "position": [0.0, 1.0, 1.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [100.0, 100.0, 100.0]
+    },
+    {
+        "type": "pointlightss",
+        "position": [0.0, 1.0, 1.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [100.0, 100.0, 100.0]
+    },
+    {
+        "type": "arealight",
+        "position": [-1.0, 1.0, 1.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [150.0, 150.0, 150.0],
+        "cell": 4,
+        "radius": 1.0
+    }
+    ],
+    "shapes":[
+    {
+        "type":"sphere",
+        "center": [0.0, 2.7, 0.15],
+        "radius":0.5,
+        "material":{
+            "ks":0.4,
+            "kd":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.4, 0.3, 0.4],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/sky-map.ppm",
+            "tWidth": 850,
+            "tHeight": 480
+        }
+    },
+    {
+        "type":"meshss",
+        "vertices": [
+            [-2.0, 7.0, 3.0],[0.0,7.0,2.0],[2.0,7.0,3.0], [0.0,7.0,4.0]
+        ],
+        "faces" : 3,
+        "numVerticesOnEachFace": [3,3],
+        "verticesOnEachFace" : [0,1,2, 0,3,2],
+        "material":{
+            "ks":0.4,
+            "kd":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.8, 0.8, 0.8]
+        }
+    },
+    {
+        "type":"mesh",
+        "vertices": [
+            [0.0,2.0,2.2], [-0.3, 2.0,2.0], [0.3,2.0,2.0],[-0.2,2.0,2.3],[0.2,2.0,2.3],[-0.1,2.0,2.5],[0.0,2.0,2.8],[0.1,2.0,2.5], [-0.4,2.0,2.5],[0.4,2.0,2.5]
+        ],
+        "faces" : 4,
+        "numVerticesOnEachFace": [3,3,3,5],
+        "verticesOnEachFace" : [0,3,1,0,2,4,5,7,6,8,3,0,4,9],
+        "material":{
+            "ks":0.4,
+            "kd":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.8, 0.8, 0.8]
+        }
+    },
+    {
+        "id": "back wall",
+        "type": "plane",
+        "v1": [-2.0, 8.0, 0.0],
+        "v2": [-2.0, 8.0, 5.0],
+        "v3": [2.0, 8.0, 5.0],
+        "v0": [2.0, 8.0, 0.0],
+        "material":{
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0]
+        }
+    },
+    {
+        "id": "floor",
+        "type": "plane",
+        "v3": [-2.0, 0.0, 0.0],
+        "v0": [-3.0, 8.0, 0.0],
+        "v1": [2.0, 8.0, 0.0],
+        "v2": [2.0, 0.0, 0.0],
+        "material": {
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/sicily.ppm",
+            "tWidth": 600,
+            "tHeight": 490
+        }
+    },
+    {
+        "id": "left wall",
+        "type": "triangle",
+        "v0": [-2.0, 8.0, 0.0],
+        "v1": [-2.0, 8.0, 5.0],
+        "v2": [-2.0, 0.0, 0.0],
+        "material": {
+            "ks": 0.6,
+            "kd": 1.0,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 0.2, 0.2]
+        }
+    },
+    {
+        "id": "right wall",
+        "type": "triangle",
+        "v0": [2.0, 8.0, 0.0],
+        "v1": [2.0, 0.0, 0.0],
+        "v2": [2.0, 8.0, 5.0],
+        "material": {
+            "ks": 0.6,
+            "kd": 1.0,
+            "specularexponent": 10,
+            "diffusecolor": [0.2, 0.2, 1.0]
+        }
+    }
+    ]
+}
+}

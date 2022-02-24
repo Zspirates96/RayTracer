@@ -1,0 +1,126 @@
+{
+"nbounces":1,
+"sampling" : 1,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov":35,
+    "position": [0.0, -3.5, 2.0],
+    "lookat": [0.0, 1.0, -0.1],
+    "up": [0.0, 0.0, 0.5]
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "pointlight",
+        "position": [1.0, 1.0, 1.5],
+        "is": [50.0, 50.0, 50.0],
+        "id": [50.0, 50.0, 50.0]
+    },
+    {
+        "type": "arealight",
+        "position": [-1.0, 1.0, 1.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [150.0, 150.0, 150.0],
+        "cell": 4,
+        "radius": 1.0
+    }
+    ],
+    "shapes":[
+    {
+        "type":"sphere",
+        "center": [0.0, 3, 0.5],
+        "radius":0.5,
+        "material":{
+            "ks":0.4,
+            "kd":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.4, 0.3, 0.4],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/mc.ppm",
+            "tWidth": 660,
+            "tHeight": 371
+        }
+    },
+    {
+        "type":"mesh",
+        "vertices": [
+            [0.0,2.0,2.2], [-0.3, 2.0,2.0], [0.3,2.0,2.0],[-0.2,2.0,2.3],[0.2,2.0,2.3],[-0.1,2.0,2.5],[0.0,2.0,2.8],[0.1,2.0,2.5], [-0.4,2.0,2.5],[0.4,2.0,2.5]
+        ],
+        "faces" : 4,
+        "numVerticesOnEachFace": [3,3,3,5],
+        "verticesOnEachFace" : [0,3,1,0,2,4,5,7,6,8,3,0,4,9],
+        "material":{
+            "ks":0.3,
+            "kd":0.3,
+            "kr":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.8, 0.8, 0.0]
+        }
+    },
+    {
+        "type": "plane",
+        "v1": [-3.8, 8.0, 0.0],
+        "v2": [-3.8, 8.0, 5.0],
+        "v3": [3.8, 8.0, 5.0],
+        "v0": [3.8, 8.0, 0.0],
+        "material":{
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/mc_texture.ppm",
+            "tWidth": 1920,
+            "tHeight": 1080
+        }
+    },
+    {
+        "type": "plane",
+        "v3": [-4.0, 0.0, 0.0],
+        "v0": [-4.0, 8.0, 0.0],
+        "v1": [4.0, 8.0, 0.0],
+        "v2": [4.0, 0.0, 0.0],
+        "material": {
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/ukflag.ppm",
+            "tWidth": 600,
+            "tHeight": 490
+        }
+    },
+    {
+        "id": "left wall",
+        "type": "triangle",
+        "v0": [-4.0, 7.5, 0.0],
+        "v1": [0.0, 7.5, 0.0],
+        "v2": [-4.0, 7.5, 1.0],
+        "material": {
+            "ks": 1.0,
+            "kd": 0.5,
+            "kr": 1.0,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 0.2, 0.2]
+        }
+    },
+    {
+        "id": "right wall",
+        "type": "triangle",
+        "v0": [4.0, 7.5, 0.0],
+        "v2": [0.0, 7.5, 0.0],
+        "v1": [4.0, 7.5, 1.0],
+        "material": {
+            "ks": 1.0,
+            "kd": 0.5,
+            "kr": 1.0,
+            "specularexponent": 10,
+            "diffusecolor": [0.2, 0.2, 1.0]
+        }
+    }
+    ]
+}
+}

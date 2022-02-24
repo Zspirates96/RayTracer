@@ -1,0 +1,94 @@
+{
+"nbounces":1,
+"sampling" : 8,
+"camera":{
+    "type":"pinhole",
+    "width":800,
+    "height":800,
+    "fov":35,
+    "position": [0.0, -3.5, 2.0],
+    "lookat": [0.0, 1.0, -0.1],
+    "up": [0.0, 0.0, 0.5]
+},
+"scene":{
+    "backgroundcolor":[0.01, 0.01, 0.01],
+    "lightsources": [
+    {
+        "type": "arealight",
+        "position": [0.0, 1.0, 1.5],
+        "is": [100.0, 100.0, 100.0],
+        "id": [100.0, 100.0, 100.0],
+        "cell": 4,
+        "radius": 1.0
+    }
+    ],
+    "shapes":[
+    {
+        "id": "sky",
+        "type": "plane",
+        "v1": [-4.0, 8.0, 0.0],
+        "v2": [-4.0, 8.0, 4.5],
+        "v3": [4.0, 8.0, 4.5],
+        "v0": [4.0, 8.0, 0.0],
+        "material":{
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/sky.ppm",
+            "tWidth": 299,
+            "tHeight": 168
+        }
+    },
+    {
+        "id": "grass",
+        "type": "plane",
+        "v3": [-4.0, 0.0, 0.0],
+        "v0": [-4.0, 8.0, 0.0],
+        "v1": [4.0, 8.0, 0.0],
+        "v2": [4.0, 0.0, 0.0],
+        "material": {
+            "ks": 0.6,
+            "kd": 0.7,
+            "kr": 0.3,
+            "specularexponent": 10,
+            "diffusecolor": [1.0, 1.0, 1.0],
+            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/grass.ppm",
+            "tWidth": 570,
+            "tHeight": 568
+        }
+    },
+    {
+        "type":"mesh",
+        "vertices": [[-2.0, 4.0, 0.0], [-2.5, 4.0, 0.0], [-2.5, 4.0, 0.5], [-2.0, 4.0, 0.5], [-2.0, 4.5, 0.5], [-2.5, 4.5, 0.5], [-2.5, 4.5, 0.0], [-2.0, 4.5, 0.0]],
+        "faces": 4,
+        "numVerticesOnEachFace": [4,4,4,4],
+        "verticesOnEachFace": [0, 1, 2, 3, 3, 2, 5, 4, 7, 4, 3, 0, 1, 2, 5, 6],
+        "material":{
+            "ks":0.3,
+            "kd":0.3,
+            "kr":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.8, 0.8, 0.0]
+        }
+    },
+    {
+        "type":"mesh",
+        "vertices": [
+            [0.0,2.0,2.2], [-0.3, 2.0,2.0], [0.3,2.0,2.0],[-0.2,2.0,2.3],[0.2,2.0,2.3],[-0.1,2.0,2.5],[0.0,2.0,2.8],[0.1,2.0,2.5], [-0.4,2.0,2.5],[0.4,2.0,2.5]
+        ],
+        "faces" : 4,
+        "numVerticesOnEachFace": [3,3,3,5],
+        "verticesOnEachFace" : [0,3,1,0,2,4,5,7,6,8,3,0,4,9],
+        "material":{
+            "ks":0.3,
+            "kd":0.3,
+            "kr":0.8,
+            "specularexponent":3,
+            "diffusecolor":[0.8, 0.8, 0.0]
+        }
+    }
+    ]
+}
+}
