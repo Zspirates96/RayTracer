@@ -1,9 +1,13 @@
 To compile the code:
 
 cd path/to/RayTracer
+
 mkdir build
+
 cd build
+
 cmake ..
+
 cmake --build .
 
 
@@ -16,5 +20,7 @@ To run the example, do:
 For bvh to work, replace RayTracer.cpp with RayTracer_bvh.cpp.
 
 Then, rename RayTracer_bvh.cpp as RayTracer.cpp
+
+An example image:
 
 ![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final.jpg?raw=true)
