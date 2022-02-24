@@ -20,7 +20,7 @@ For bvh to work, replace RayTracer.cpp with RayTracer_bvh.cpp.
 
 Then, rename RayTracer_bvh.cpp as RayTracer.cpp
 
-An example image:
+An example image with pointlight on the right and arealight on the left:
 
 without depth of field:
 ![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final_no_dof.jpg?raw=true)
