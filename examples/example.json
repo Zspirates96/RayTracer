@@ -1,6 +1,6 @@
 {
 "nbounces":1,
-"sampling": 24,
+"sampling": 16,
 "camera":{
     "type":"thinlens",
     "width":800,
@@ -42,7 +42,7 @@
             "kd":0.8,
             "specularexponent":3,
             "diffusecolor":[0.4, 0.3, 0.4],
-            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/sky-map.ppm",
+            "tPath": "../textures/sky-map.ppm",
             "tWidth": 850,
             "tHeight": 480
         }
@@ -91,7 +91,7 @@
             "kr": 0.3,
             "specularexponent": 10,
             "diffusecolor": [1.0, 1.0, 1.0],
-            "tPath": "C:/Users/minsu/Desktop/Work/Computer-Graphics/assignment2/RayTracer/textures/sicily.ppm",
+            "tPath": "../textures/sicily.ppm",
             "tWidth": 600,
             "tHeight": 490
         }

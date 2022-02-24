@@ -32,6 +32,6 @@ To run the examples, do:
 
 3. for the raytracer provided:
 
-./raytracer ../examples/example.json <path_to_output_img>/testout.ppm
+./debug/raytracer ../examples/example.json <path_to_output_img>/testout.ppm
 
 The raytracer provided outputs an empty file. You will need to implement the actual raytracer. Good luck!
