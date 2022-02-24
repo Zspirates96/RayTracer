@@ -12,3 +12,7 @@ This compiles both the raytracer and the example programs, executables of which 
 To run the example, do:
 
 ./debug/raytracer ../examples/example.json <path_to_output_img>/testout.ppm
+
+For bvh to work, replace RayTracer.cpp with RayTracer_bvh.cpp.
+
+Then, rename RayTracer_bvh.cpp as RayTracer.cpp
