@@ -16,3 +16,5 @@ To run the example, do:
 For bvh to work, replace RayTracer.cpp with RayTracer_bvh.cpp.
 
 Then, rename RayTracer_bvh.cpp as RayTracer.cpp
+
+![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final.jpg?raw=true)
