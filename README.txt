@@ -4,7 +4,7 @@ cd path/to/RayTracer
 mkdir build
 cd build
 cmake ..
-make
+cmake --build .
 
 
 This compiles both the raytracer and the example programs, executables of which can be found in build/ folder.
