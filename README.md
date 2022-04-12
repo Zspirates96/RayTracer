@@ -26,4 +26,4 @@ without depth of field:
 ![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final_no_dof.jpg?raw=true)
 
 with depth of field (1 sampling):
-![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final.jpg?raw=true)
+![alt text](https://github.com/Zspirates96/RayTracer/blob/main/final_dof.jpg?raw=true)
